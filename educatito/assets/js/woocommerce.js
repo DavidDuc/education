@@ -1,0 +1,1 @@
+!function(t){"use strict";jQuery(document).ready(function(t){t(document).on("click",".qty-plus",function(){var n=t(this).parent();t("input.qty",n).val(parseInt(t("input.qty",n).val())+1)}),t(document).on("click",".qty-minus",function(){var n=t(this).parent();parseInt(t("input.qty",n).val())>1&&t("input.qty",n).val(parseInt(t("input.qty",n).val())-1)})})}(jQuery);

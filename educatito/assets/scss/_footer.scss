@@ -1,0 +1,221 @@
+.footer{
+    position: relative;
+    background-repeat: repeat;
+    color: #636363;
+    .col-footer{
+        &:last-child{
+            .widget_text{
+                .textwidget{
+                    margin-bottom:0;
+                }
+            }
+        }
+        .widget_media_image{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .footer-widget{
+            .title{
+                padding-bottom: 25px;
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 400;
+                margin-top: -1px;
+                font-family: "Roboto Slab", sans-serif;
+                color: #1a1a23;
+                margin: 0;
+                font-weight:500;
+            }
+        }
+        .widget_tag_cloud{
+            .tagcloud{
+                margin-top: 10px;
+                a{
+                    background: #252525;
+                    color: #646464;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    font-size: 14px !important;
+                    &:hover{
+                        background: $primary-color;
+                        color: #fff;
+                    }
+                }  
+            }   
+        }
+        .widget_text{
+            .textwidget{
+                margin-bottom:30px;
+                p{
+                    color: #7E7E7E;
+                    margin: 0;
+                }
+            }
+        }
+        .widget_nav_menu{
+            .menu{
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                li{
+                    padding: 5px 0;
+                    display: inline-block;
+                    margin: 0;
+                    margin-right: 45px;
+                    a{
+                        position: relative;
+                        padding-right:20px;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                        &:before{
+                            content: '\f105';
+                            position: absolute;
+                            font-family: 'fontawesome';
+                            left: 0;
+                            opacity: 0;
+                            -webkit-transition: all 0.3s ease-in-out;
+                            -moz-transition: all 0.3s ease-in-out;
+                            -ms-transition: all 0.3s ease-in-out;
+                            -o-transition: all 0.3s ease-in-out;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            padding-left:12px;
+                            &:before{
+                                opacity: 1;
+                                -webkit-transition: all 0.3s ease-in-out;
+                                -moz-transition: all 0.3s ease-in-out;
+                                -ms-transition: all 0.3s ease-in-out;
+                                -o-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sec-padding{
+        padding: 90px 0 90px 0;
+        margin: 0px auto;
+    }
+}
+
+.footer-bottom{
+    background: #101010;
+    .copyright{
+        padding: 14px 0;
+        p{
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 14px;
+            color: #c2c2c2;
+            @include font-regular();
+            margin: 0;
+        }
+    }
+    .menu-bottom{
+        padding: 14px 0;
+        .menu{
+            display: flex;
+            li{
+                a{
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    color: #c2c2c2;
+                    @include font-light();
+                    margin-left: 20px;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:991px){
+    .footer .sec-padding{
+        padding: 60px 0 60px 0 !important;
+    }
+}
+@media(max-width:918px){
+    .footer{
+        .col-footer{
+            width:100%;
+            margin-bottom: 25px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .widget_nav_menu{
+                .menu{
+                    -webkit-column-count: 1;
+                    -moz-column-count: 1;
+                    column-count: 1;
+                }
+            }
+        }
+    }
+    .footer .col-footer .widget_nav_menu .menu li{
+        margin-right: 10px;
+    }
+    .footer .col-footer .widget_nav_menu .menu li a{
+        padding-left:12px;
+        &:before{
+            opacity: 1;
+        }
+    }
+}
+@media(max-width:600px){
+    .footer-bottom{
+        .copyright{
+            float: none;
+            text-align: center;
+        }
+        .menu-bottom{
+            display: none;
+        }
+    }
+}
+.post-type-archive-product,.single-product{
+    footer{
+        background: #f7f7f7;
+    }
+}
+.widget_newsletterwidget{
+    .tnp-field-email{
+        label{
+            display: none;
+        }
+        .tnp-email{
+            height: 46px;
+            background: transparent;
+            border: 1px solid #ebebeb;
+            color: #ccc;
+            -webkit-box-shadow: 0px 18px 32px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .tnp-field-button{
+        position: absolute;
+        width: 60px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        &:before{
+            position: absolute;
+            content: "\f1d9";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            color: #ec910e;
+            left: 35%;
+            top: 32%;
+        }
+        .tnp-submit{
+            font-size: 0;
+            height: 46px;
+            background-color: transparent;
+            border: 0;
+        }
+    }
+}

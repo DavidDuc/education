@@ -1,0 +1,71 @@
+$primary-color:#ec910e;
+$color-orange: #ec910e;
+$color-darkgreen: #056163;
+$bg-loadpage:#222222;
+$color-white: #ffffff;
+$color-black: #000000;
+$second-text: #4e5453;
+$link-color:#636363;
+$link-color-hover:#ec910e;
+$button-primary:#ec910e;
+$menu-fontsize:14px;
+$color-menu:#1b2725;
+$color-hover-menu:#ec910e;
+$color-hover-background-menu: transparent;
+$color-active-menu:#ec910e;
+$color-active-background-menu: transparent;
+$color-submenu:#1b2725;
+$submenu-background:transparent;
+$color-active-submenu:#ec910e;
+$color-hover-submenu:#ec910e;
+$color-active-background-submenu: transparent;
+$color-hover-background-submenu: transparent;
+$header-transform: uppercase;
+
+@mixin scale($y){
+   -webkit-transform: scale($y);
+   -moz-transform: scale($y);
+   -o-transform: scale($y);
+   transform: scale($y);
+}
+@mixin skew($number){
+   -webkit-transform: skew($number);
+   -moz-transform: skew($number);
+   -ms-transform: skew($number);
+   -o-transform: skew($number);
+   transform: skew($number);
+}
+@mixin rotate($number){
+    -webkit-transform: rotate($number);
+    -moz-transform: rotate($number);
+    -ms-transform: rotate($number);
+    -o-transform: rotate($number);
+    transform: rotate($number);
+}
+
+@mixin transition(){
+    transition: all .5s ease;
+}
+@mixin font-light{
+    font-weight: 300;
+}
+
+@mixin font-regular{
+    font-weight: 400;
+}
+
+@mixin font-medium{
+    font-weight: 500;
+}
+
+@mixin font-semi-bold{
+    font-weight: 600;
+}
+
+@mixin font-bold{
+    font-weight: 700;
+}
+
+@mixin font-black{
+    font-weight: 900;
+}
